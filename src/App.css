@@ -22,3 +22,13 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.google-map {
+  color: #666;
+  text-align: left;
+  font-size: 12px;
+}
+
+.img-small {
+  border: 1px solid rgba(102, 102, 102, 0.2);
+}

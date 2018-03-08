@@ -6,9 +6,14 @@ import state from "./state";
 
 function render() {
   ReactDOM.render(
-    <App state={state} />,
+    <App changeContent={changeContent} state={state} />,
     document.getElementById("root")
   );
 }
-render();
 
+function changeContent(newId) {
+  state.currentContent = state.contents.find(content => content.id === newId);
+  render();
+}
+
+render();
